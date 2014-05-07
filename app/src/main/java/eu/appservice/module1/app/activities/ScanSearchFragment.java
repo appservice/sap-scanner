@@ -136,12 +136,14 @@ public class ScanSearchFragment extends Fragment implements View.OnClickListener
             double amount = db.getMaterial(materialFromDb.getId()).getAmount();// uaktualnienie ilości
             this.materialFromDb.setAmount(amount);
 
+            String store=this.getString(R.string.label_store);
+
             TreeMap<String, Double> mapStockAmount = (TreeMap<String, Double>) db.getMapStockAmount(this.materialFromDb.getIndex());
             for (Map.Entry<String, Double> pairs : mapStockAmount.entrySet()) {
                 sb.append(Utils.parse(pairs.getValue()));
                 sb.append(" ");
                 sb.append(unit);
-                sb.append("   skład: ");
+                sb.append("   "+store+": ");
                 sb.append(pairs.getKey());
                 sb.append("\n");
 

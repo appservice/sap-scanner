@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/textView5"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
                 android:text="@string/label_name" />
 
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignRight="@+id/textView6"
                 android:layout_marginTop="15dp"
-                android:text="@string/label_btn_list"
+                android:text="@string/label_amount"
                 android:layout_below="@+id/fragment_scan_search_tv_name" />
 
             <TextView
