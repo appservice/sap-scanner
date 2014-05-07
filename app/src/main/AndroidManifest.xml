@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.appservice"
+    android:installLocation="auto"
+    android:versionCode="2"
+    android:versionName="2.25">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat">
+
+        <!-- android:uiOptions="splitActionBarWhenNarrow" -->
+        <!-- android:theme="@android:style/Theme.Black"> android:theme="@android:style/Theme.Black" -->
+
+        <activity
+            android:name="eu.appservice.module1.app.activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:permission="android.permission.VIBRATE"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity Settings -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.SettingsActivity"
+            android:parentActivityName="eu.appservice.module1.app.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="eu.appservice.module1.app.activities.SearchActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Activity PZ -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.PzActivity"
+            android:label="PZ"
+            android:parentActivityName="eu.appservice.module1.app.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.MainActivity" />
+        </activity>
+
+        <!-- Activity  New Material -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.NewMaterialActivity"
+            android:label="Dodaj materiał"
+            android:parentActivityName="eu.appservice.module1.app.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.MainActivity" />
+        </activity>
+
+        <!-- Activity RW -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.RwActivity"
+            android:label="@string/title_activity_rw"
+            android:parentActivityName="eu.appservice.module1.app.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.MainActivity" />
+        </activity>
+
+        <!-- Activity MPK LIST -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.MpkListActivity"
+            android:parentActivityName="eu.appservice.module1.app.activities.RwActivity"
+            android:label="Lista MPK"
+            android:screenOrientation="portrait">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="eu.appservice.module1.app.activities.RwActivity" />
+    </activity>
+
+    >
+
+        <!-- Activity Collected Material List -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.CollectedMaterialsListActivity"
+            android:label="Lista RW"
+            android:parentActivityName="eu.appservice.module1.app.activities.RwActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.RwActivity" />
+        </activity>
+
+        <!-- Activity INVENTORY -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.InventoryActivity"
+            android:label="Inwentaryzacja"
+            android:parentActivityName="eu.appservice.module1.app.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.MainActivity" />
+        </activity>
+
+        <!-- Activity FingerPaint -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.FingerPaintActivity"
+            android:label="Podpis"
+            android:screenOrientation="landscape" />
+
+        <!-- Activity  Search In Collected Activity............................-->
+        <activity
+            android:name="eu.appservice.module1.app.activities.SearchCollectedActivity"
+            android:label="Szukaj w pobranych"
+            android:parentActivityName="eu.appservice.module1.app.activities.CollectedMaterialsListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.CollectedMaterialsListActivity" />
+        </activity>
+        <!-- <activity android:name="eu.appservice." android:screenOrientation="portrait"></activity> -->
+
+
+        <!--................ Activity FingerPaint............................. -->
+        <activity
+            android:name="eu.appservice.module1.app.activities.TestActivity"
+            android:label="Test Activity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.CollectedMaterialsListActivity" />
+        </activity>
+
+        <!--......................Info Activity........................................-->
+        <activity
+            android:name="eu.appservice.module1.app.activities.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app.activities.SeggintsActivity" />
+        </activity>
+
+        <!-- .................pz_list_activity........................................-->
+        <activity
+            android:name="eu.appservice.module1.app.activities.PzListActivity"
+            android:label="@string/title_activity_pz_list"
+
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.appservice.module1.app..activities.PzActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTextIndexSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:maxLength="18"
+        android:singleLine="true">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextNameSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextIndexSearchActiv"
+        android:layout_below="@+id/editTextIndexSearchActiv"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/editTextStockSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNameSearchActiv"
+        android:layout_below="@+id/editTextNameSearchActiv"
+        android:layout_marginTop="18dp"
+        android:ellipsize="end"
+        android:ems="4"
+        android:fitsSystemWindows="true"
+        android:inputType="phone"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:width="80dip" />
+
+    <TextView
+        android:id="@+id/textViewNameSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextNameSearchActiv"
+        android:layout_alignBottom="@+id/editTextNameSearchActiv"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_name_search_activ" />
+
+    <TextView
+        android:id="@+id/textViewStockSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextStockSearchActiv"
+        android:layout_alignBottom="@+id/editTextStockSearchActiv"
+        android:layout_alignRight="@+id/textViewNameSearchActiv"
+        android:text="@string/txt_stock_search_activ" />
+
+    <TextView
+        android:id="@+id/textViewIndexSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextIndexSearchActiv"
+        android:layout_alignBottom="@+id/editTextIndexSearchActiv"
+        android:layout_alignRight="@+id/textViewNameSearchActiv"
+        android:text="@string/txt_index_search_activ" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSearchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextStockSearchActiv"
+        android:layout_below="@+id/editTextStockSearchActiv"
+        android:layout_marginTop="24dp"
+        android:text="@string/check_box_search_view" />
+
+    <Button
+        android:id="@+id/btnSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxSearchView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/btn_search_activ" />
+
+    <TextView
+        android:id="@+id/textViewAmountSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ilość"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/editTextStockSearchActiv"
+        android:layout_marginLeft="30dip"
+        android:layout_alignBaseline="@+id/editTextStockSearchActiv" />
+
+    <TextView
+        android:id="@+id/textViewUnitSearchActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jm"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/textViewAmountSearchActiv"
+        android:layout_toRightOf="@+id/textViewAmountSearchActiv"
+        android:layout_marginLeft="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPositionSearchActiv"
+        android:layout_below="@+id/checkBoxSearchView"
+        android:layout_marginTop="20dip"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout><!-- From: file:/home/luke/AndroidStudioProjects/sap-scanner/res/layout/activity_search.xml -->

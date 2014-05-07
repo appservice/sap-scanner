@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/av"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RwActivity"
+    android:gravity="right">
+
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/autoCompleteTextViewMpkRwActiv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            tools:context=".RwActivity"
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/imgBtnSearchRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_search"
+                android:minWidth="65dp"
+                android:minHeight="65dp"
+                android:contentDescription="" />
+            <!--android:layout_alignTop="@+id/imgBtnScanRwActiv"-->
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imgBtnScanRwActiv"
+                android:layout_alignRight="@+id/imgBtnScanRwActiv"
+                android:layout_marginRight="10dp"
+                android:text="Skanuj"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ImageButton
+                android:id="@+id/imgBtnScanRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/ic_button_pz" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Nazwa:" />
+
+            <EditText
+                android:id="@+id/textViewIndexRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewNameRwActiv"
+                android:layout_below="@+id/imgBtnSearchRwActiv"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_black"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLength="18"
+                android:text=""
+                android:textSize="22sp"
+                android:textColor="#FAFAFA"
+                android:inputType=""
+                android:gravity="left"
+                android:autoText="false"
+                android:minWidth="220dip" />
+
+            <TextView
+                android:id="@+id/textViewNameRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/textView6"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView6"
+                android:layout_marginTop="15dp"
+                android:text="Ilość:"
+                android:layout_below="@+id/textViewNameRwActiv" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewIndexRwActiv"
+                android:layout_alignBottom="@+id/textViewIndexRwActiv"
+                android:layout_alignRight="@+id/textView6"
+                android:text="Index:" />
+
+            <TextView
+                android:id="@+id/textViewAmountRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewNameRwActiv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/textView8"
+                android:gravity="right"
+                android:minLines="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignParentTop="true"
+                android:text="Szukaj w bazie"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textViewUnitRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextAddValueRwActiv"
+                android:layout_alignBottom="@+id/editTextAddValueRwActiv"
+                android:layout_toRightOf="@+id/editTextAddValueRwActiv"
+                android:layout_marginLeft="4dp"
+                android:text="" />
+
+            <Spinner
+                android:id="@+id/textViewStockRwActiv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewUnitRwActiv"
+                android:layout_alignLeft="@+id/btnSignRwActiv"
+                android:layout_alignRight="@+id/imgBtnScanRwActiv"
+                android:layout_alignTop="@+id/editTextAddValueRwActiv"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnSaveRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zapisz"
+                android:width="100dp"
+                android:layout_below="@+id/btnMpkRwActiv"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+
+                />
+            <!--android:layout_alignParentBottom="true"
+             android:layout_toRightOf="@+id/imgBtnSearchRwActiv"-->
+
+            <Button
+                android:id="@+id/btnMpkRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="MPK"
+                android:layout_gravity="center"
+                android:layout_below="@+id/editTextAddValueRwActiv"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/btnShowListRwAcitv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnSaveRwActiv"
+                android:layout_alignParentLeft="true"
+                android:text="Lista" />
+
+            <ImageButton
+                android:id="@+id/btnSignRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnSaveRwActiv"
+                android:layout_alignParentRight="true"
+                android:text="Podpis"
+                android:src="@drawable/ic_document_write"
+                android:layout_toRightOf="@+id/tvZlecenieRwActiv" />
+            <!--android:layout_alignParentBottom="true"-->
+            <EditText
+                android:id="@+id/editTextAddValueRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAmountRwActiv"
+                android:layout_marginTop="15dp"
+                android:ems="4"
+                android:inputType="numberDecimal"
+                android:layout_toRightOf="@+id/textView8"
+                android:layout_marginLeft="10dip">
+
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvWydaneOpis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextAddValueRwActiv"
+                android:layout_toLeftOf="@+id/textViewAmountRwActiv"
+                android:text="Wydane:" />
+
+            <TextView
+                android:id="@+id/editTextMpkRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btnMpkRwActiv"
+                android:ems="6"
+                android:singleLine="true"
+                android:editable="false"
+                android:clickable="false"
+                android:focusable="true"
+                android:enabled="false"
+                android:layout_alignBaseline="@+id/btnMpkRwActiv"
+                android:layout_marginRight="20px"
+                android:gravity="right"
+                android:textColor="@android:color/background_light"
+                android:hint="MPK:" />
+
+            <TextView
+                android:id="@+id/textViewStockRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewUnitRwActiv"
+                android:layout_alignBottom="@+id/textViewUnitRwActiv"
+                android:layout_toRightOf="@+id/textViewUnitRwActiv"
+                android:layout_marginLeft="10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvZlecenieRwActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextMpkRwActiv"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btnMpkRwActiv"
+                android:layout_alignParentEnd="false"
+                android:hint="Zlecenie:"
+                android:editable="false"
+                android:textColor="@android:color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxZeroRvActiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:singleLine="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:enabled="true"
+                android:focusable="false"
+                android:hint="na zero"
+                android:clickable="true"
+                android:layout_alignBaseline="@+id/editTextAddValueRwActiv" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout><!-- <TextView
+            android:id="@+id/textViewIndexRwActiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNameRwActiv"
+            android:layout_below="@+id/imgBtnSearchRwActiv"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textSize="20sp"
+             /> -->

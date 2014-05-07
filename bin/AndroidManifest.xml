@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.appservice"
+    android:versionCode="2"
+    android:versionName="2.25"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black">
+        <activity
+
+            android:name=".activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:permission="android.permission.VIBRATE"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.SearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.PzActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- <activity android:name="eu.appservice.SkanerResultTest" >
+         </activity>-->
+        <activity
+            android:name=".ScannedMaterial$NewMaterialActivity"
+            android:label="Dodaj materiał"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.RwActivity"
+            android:label="@string/title_activity_rw"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.MpkListActivity"
+            android:screenOrientation="portrait"
+            android:label="Wybierz MPK" />
+
+
+        <activity
+            android:name=".activities.CollectedMaterialsListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.InventoryActivity"
+            android:screenOrientation="portrait"
+            android:label="Podpis"></activity>
+        <activity
+            android:name=".activities.FingerPaintActivity"
+            android:screenOrientation="landscape"
+            android:label="Inwentaryzacja"></activity>
+        <activity
+            android:name=".activities.SearchCollectedActivity"
+            android:label="Przeszukaj w liśicie pobranych" 
+            android:screenOrientation="portrait"/>
+        <!--<activity android:name="eu.appservice." android:screenOrientation="portrait"></activity>-->
+
+    </application>
+
+</manifest>

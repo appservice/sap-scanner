@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".InventoryActivity">
+
+
+    <ImageButton
+        android:id="@+id/imgBtnSearchInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_search"
+        android:contentDescription="" />
+    <!--android:layout_alignTop="@+id/imgBtnScanInvActiv"-->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgBtnScanInvActiv"
+        android:layout_alignRight="@+id/imgBtnScanInvActiv"
+        android:layout_marginRight="10dp"
+        android:text="Skanuj"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/imgBtnScanInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/ic_button_pz" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Nazwa:" />
+
+    <EditText
+        android:id="@+id/textViewIndexInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgBtnSearchInvActiv"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_black"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:maxLength="18"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#FAFAFA"
+        android:inputType=""
+        android:gravity="left"
+        android:autoText="false"
+        android:minWidth="220dip"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/textViewNameInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/textView6"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_marginTop="15dp"
+        android:text="Ilość:"
+        android:layout_below="@+id/textViewNameInvActiv" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewIndexInvActiv"
+        android:layout_alignBottom="@+id/textViewIndexInvActiv"
+        android:layout_alignRight="@+id/textView6"
+        android:text="Index:" />
+
+    <TextView
+        android:id="@+id/textViewAmountInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNameInvActiv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView8"
+        android:gravity="right"
+        android:minLines="1"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:text="Szukaj w bazie"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewUnitInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextAddValueInvActiv"
+        android:layout_alignBottom="@+id/editTextAddValueInvActiv"
+        android:layout_toRightOf="@+id/editTextAddValueInvActiv"
+        android:layout_marginLeft="4dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnSaveInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        android:width="100dp"
+        android:layout_below="@+id/editTextAddValueInvActiv"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+
+        />
+    <!--android:layout_alignParentBottom="true"
+     android:layout_toRightOf="@+id/imgBtnSearchInvActiv"-->
+
+    <Button
+        android:id="@+id/btnPlaceInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miejsce"
+        android:layout_gravity="center"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btnShowListInvAcitv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:width="60dp" />
+
+
+    <!--android:layout_alignParentBottom="true"-->
+    <EditText
+        android:id="@+id/editTextAddValueInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAmountInvActiv"
+        android:layout_marginTop="15dp"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dip">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvWydaneOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextAddValueInvActiv"
+        android:text="Na stanie:"
+        android:layout_marginLeft="5px" />
+
+    <TextView
+        android:id="@+id/textViewStockInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUnitInvActiv"
+        android:layout_alignBottom="@+id/textViewUnitInvActiv"
+        android:layout_toRightOf="@+id/textViewUnitInvActiv"
+        android:layout_marginLeft="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvPlaceInvActiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentEnd="false"
+        android:hint="Miejsce inwentaryzacji"
+        android:editable="false"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/btnPlaceInvActiv"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="miejsce inwentaryzacji"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/btnSaveInvActiv"
+        android:layout_alignRight="@+id/textViewAmountInvActiv"
+        android:layout_alignEnd="@+id/textViewAmountInvActiv"
+        android:onClick="showTestActivity" />
+
+
+</RelativeLayout>
+<!-- From: file:/home/luke/AndroidStudioProjects/sap-scanner/res/layout/activity_inventory.xml -->

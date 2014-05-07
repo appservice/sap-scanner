@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/TextView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:longClickable="true"></TextView>
+
+
+<!-- From: file:/home/luke/AndroidStudioProjects/sap-scanner/res/layout/activity_picked_material.xml -->
