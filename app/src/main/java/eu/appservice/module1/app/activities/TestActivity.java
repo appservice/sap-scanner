@@ -1,6 +1,8 @@
 package eu.appservice.module1.app.activities;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.v4.app.Fragment;
@@ -67,6 +69,7 @@ public class TestActivity extends ActionBarActivity implements ScanSearchFragmen
     }
 
     //----------------on click save button--------------------------------------------------------------
+    @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     public void saveButtonClicked(View view) {
         String budget = tvBudget.getText().toString();
         String mpk = tvMPK.getText().toString();
