@@ -1,59 +1,16 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
     repositories {
-   /*     maven {
-            url 'repo1.maven.org/maven2';
-        }*/
-        mavenLocal()
-       mavenCentral()
-
+        mavenCentral()
     }
-
     dependencies {
         classpath 'com.android.tools.build:gradle:0.9.+'
     }
 }
-apply plugin: 'android'
 
-//apply plugin: 'java'
-
-
-
-android {
-    compileSdkVersion 19
-    buildToolsVersion "19.0.3"
-
-
-        sourceSets {
-
-            main {
-                manifest.srcFile 'AndroidManifest.xml'
-                java.srcDirs = ['src']
-                resources.srcDirs = ['src']
-                aidl.srcDirs = ['src']
-                renderscript.srcDirs = ['src']
-                res.srcDirs = ['res']
-                assets.srcDirs = ['assets']
-
-           }
-        }
-
-
-    tasks.withType(JavaCompile) {
-
-        options*.encoding = 'UTF-8'
+allprojects {
+    repositories {
+        mavenCentral()
     }
-}
-dependencies {
-    //compile 'net.sourceforge.jexcelapi:jxl:2.6.12'
-    //compile 'com.android.support:appcompat-v7:+'
-
-    /// 
-
-    compile files('libs/poi-3.10-beta2-20130904.jar')
-    compile files('libs/jxl.jar')
-    compile 'com.android.support:support-v4:19.+'
-    compile 'com.android.support:appcompat-v7:19.1.+'
-    //compile 'non:existing'
-
-
 }
