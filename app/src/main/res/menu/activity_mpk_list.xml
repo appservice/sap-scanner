@@ -6,7 +6,7 @@
         android:id="@+id/menu_add"
         android:title="@string/menu_add"
 
-
+        android:icon="@drawable/ic_add"
         android:showAsAction="always|withText"
         android:titleCondensed="@string/menu_add"
         sapScanner:showAsAction="ifRoom|withText"
@@ -16,5 +16,5 @@
 
 <!--sapScanner:icon="@drawable/ic_add"
 android:icon="@drawable/ic_add"
-  android:icon="@drawable/ic_add"-->
+ -->
 </menu>
