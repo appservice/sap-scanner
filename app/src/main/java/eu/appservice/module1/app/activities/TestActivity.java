@@ -16,6 +16,7 @@ import android.widget.Toast;
 import eu.appservice.R;
 import eu.appservice.module1.app.CollectedMaterial;
 import eu.appservice.module1.app.Material;
+import eu.appservice.module1.app.PlantStrucMpk;
 import eu.appservice.module1.app.Utils;
 import eu.appservice.module1.app.databases.CollectedMaterialDbOpenHelper;
 import eu.appservice.module1.app.databases.MaterialsDbOpenHelper;
@@ -121,7 +122,7 @@ public class TestActivity extends ActionBarActivity implements ScanSearchFragmen
 //----------------------------------------------------------------------------------------------------
 
     /**
-     * @param budget
+     * @param budget needed budget
      * @param mpk
      * @param isToZero
      * @param collectedAmount
@@ -170,15 +171,10 @@ public class TestActivity extends ActionBarActivity implements ScanSearchFragmen
             //-------return MPK and Budget ----------------
             case MPK_REQUEST:
                 if (resultCode == RESULT_OK) {
-                    String text = data.getStringExtra("MPK_BUDGET_RESULT");
-                    assert text != null;
 
-                    if (text.contains(";")) {
-                        String[] budget = text.split(";");
-                        this.tvMPK.setText(budget[0]);
-                        this.tvBudget.setText(budget[1]);
-
-                    }
+                    PlantStrucMpk myBudget=(PlantStrucMpk)data.getSerializableExtra("MPK_BUDGET_RESULT");
+                    this.tvMPK.setText(myBudget.getValue());
+                    this.tvBudget.setText(myBudget.getBudget());
                 }
                 break;
 
