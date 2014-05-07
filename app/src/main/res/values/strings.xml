@@ -21,7 +21,7 @@
     <string name="toast_text_set_amount_pz_activ">Nie dodano. Podaj ilość!</string>
     <string name="delete">Kasuj</string>
     <string name="add">Dodaj</string>
-    <string name="menu_add">Dodaj</string>
+    <string name="menu_add">Dodaj nowy</string>
     <string name="tvMpkNameString">Nazwa maszyny/linii:</string>
     <string name="tvMpkValueString">Wartość MPK: </string>
     <string name="cancel">Anuluj</string>
